@@ -1,0 +1,23 @@
+{ 
+    "name": "mauricio-msp/controller-route",
+    "description": "Um roteador adaptado com PHP",
+    "keywords": ["route", "routing", "php"],
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Mauricio Porfirio",
+        "email": "mauriciosporfirio@gmail.com",
+        "homepage": "https://about.me/mauricioporfirio",
+        "role": "Creator/Developer"
+      }
+    ],
+    "require": {
+        "klein/klein": "^2.1",
+        "twig/twig": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+           "Src\\": "src/"
+        }
+    }
+}
