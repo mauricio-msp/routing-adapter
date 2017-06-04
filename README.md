@@ -76,4 +76,4 @@ Configurar de acordo com os namespace da sua aplicação
 
 # Licença
 
-O simple-php é uma aplicação open-source licenciado sob a [licença MIT](https://opensource.org/licenses/MIT).
+O controller-route é uma aplicação open-source licenciado sob a [licença MIT](https://opensource.org/licenses/MIT).
