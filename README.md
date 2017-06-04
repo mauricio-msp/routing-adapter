@@ -2,7 +2,7 @@
 
 ### Uma aplicação que adapta modo de chamada da(s) rota(s) 
 
-controller-route é uma aplicação que adpata a chamada de função em sua(s) rota(s) usando o [Klein.php](https://github.com/klein/klein.php), além de renderizar as páginas usando o [Twig Template](https://twig.sensiolabs.org).
+controller-route é uma aplicação que adapta a chamada de função em sua(s) rota(s) usando o [Klein.php](https://github.com/klein/klein.php), além de renderizar as páginas usando o [Twig Template](https://twig.sensiolabs.org).
 
 
 # Instalação
