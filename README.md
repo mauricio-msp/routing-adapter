@@ -7,7 +7,7 @@
 
 # Instalação
 
-É recomendável que você use o [Composer](https://getcomposer.org) para instalar o controller-route.
+É recomendável que você use o [Composer](https://getcomposer.org) para instalar o routing.
 
 ```
 $ composer require mauricio-msp/routing
