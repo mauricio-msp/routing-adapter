@@ -3,7 +3,7 @@
 namespace Src\Http;
 
 
-abstract class Controller {
+class Controller {
     
     /**
      * @var type protected 
