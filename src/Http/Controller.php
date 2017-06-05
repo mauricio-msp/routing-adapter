@@ -35,8 +35,8 @@ abstract class Controller {
      * Carregador
      * -------------------------------------------------------------------------
      * 
-     * Irá carregar as variáveis padrão Klein para que possa ser utilizada em
-     * classe que serão criadas no diretório /controllers.
+     * Responsável pelo carregamento das variáveis padrão do Klein, para que 
+     * possam ser utilizadas nas classes criadas no diretório /controllers
      * 
      * 
      * @param type $request

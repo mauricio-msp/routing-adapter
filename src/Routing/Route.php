@@ -11,7 +11,7 @@ class Route extends \Klein\Klein {
      * Rota Adaptada
      * -------------------------------------------------------------------------
      * 
-     * Essa função cria uma rota de vários tipos, como: GET|POST|PUT|DELETE.
+     * Essa função cria uma rota que pode ser dos tipos: GET|POST|PUT|DELETE.
      * Verifica também se o 3º parâmetro é do tipo @string class->method(), uma
      * classe instânciada com chamada de método. Caso não seja ele interpreta o 
      * padrão que é uma @function. 
