@@ -1,8 +1,8 @@
-# Sobre o controller-route
+# Sobre a aplicação
 
 ### Uma aplicação que adapta modo de chamada da(s) rota(s) 
 
-controller-route é uma aplicação que adapta a chamada de função em sua(s) rota(s) usando o [Klein.php](https://github.com/klein/klein.php), além de renderizar as páginas usando o [Twig Template](https://twig.sensiolabs.org).
+É uma aplicação que adapta a chamada de função em sua(s) rota(s) usando o [Klein.php](https://github.com/klein/klein.php), além de renderizar as páginas usando o [Twig Template](https://twig.sensiolabs.org).
 
 
 # Instalação
@@ -10,7 +10,7 @@ controller-route é uma aplicação que adapta a chamada de função em sua(s) r
 É recomendável que você use o [Composer](https://getcomposer.org) para instalar o controller-route.
 
 ```
-$ composer require mauricio-msp/controller-route
+$ composer require mauricio-msp/routing
 ```
 
 O controller-route vai instalar todas as dependências necessárias, como: 
