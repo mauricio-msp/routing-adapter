@@ -13,7 +13,7 @@
     ],
     "require": {
         "klein/klein": "^2.1",
-        "twig/twig": "^2.3"
+        "twig/twig": "^2.4"
     },
     "autoload": {
         "psr-4": {

@@ -12,9 +12,9 @@ class Route extends \Klein\Klein {
      * -------------------------------------------------------------------------
      * 
      * Rotas que podem ser dos tipos: GET|POST|PUT|DELETE.
-     * Verifica também se o 2º parâmetro é do tipo string class->method(), uma
-     * classe instanciada com chamada de método. Caso não seja ele interpreta o 
-     * padrão que é uma function(){}. 
+     * Verifica também se o 2º parâmetro é do tipo string class->method() -  uma
+     * classe instanciada com chamada de método. Caso não seja, ele interpreta o 
+     * padrão que é uma function(){}.
      * 
      * @param type $path
      * @param type $callback
