@@ -9,7 +9,7 @@
 
 # Melhor entendimento
 
-Veja antes como funciona o gerenciador de rotas [klein.php](https://github.com/klein/klein.php) e suas configurações e como funciona a engine [Twig Template](https://twig.sensiolabs.org) (renderizador de páginas). Após o entendimento já pode usar a aplicação em questão.
+Veja antes como funciona o gerenciador de rotas [klein.php](https://github.com/klein/klein.php) e suas configurações e como funciona a engine [Twig Template](https://twig.sensiolabs.org) (renderizador de páginas). Após a compreensão, poderá utilizar o routing tranquilamente.
 
 # Instalação
 
