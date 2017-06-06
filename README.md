@@ -5,8 +5,11 @@
 
 ### Uma aplicação que adapta modo de chamada da(s) rota(s) 
 
-É uma aplicação que adapta a chamada de função em sua(s) rota(s) usando o [Klein.php](https://github.com/klein/klein.php), além de renderizar as páginas usando o [Twig Template](https://twig.sensiolabs.org).
+É uma aplicação que adapta a chamada de função em sua(s) rota(s) usando o [klein.php](https://github.com/klein/klein.php), além de renderizar as páginas usando o [Twig Template](https://twig.sensiolabs.org).
 
+# Melhor entendimento
+
+Veja antes como funciona o gerenciador de rotas [klein.php](https://github.com/klein/klein.php) e suas configurações e como funciona a engine [Twig Template](https://twig.sensiolabs.org) (renderizador de páginas). Após o entendimento já pode usar a aplicação em questão.
 
 # Instalação
 
@@ -16,9 +19,9 @@
 $ composer require mauricio-msp/routing
 ```
 
-O controller-route vai instalar todas as dependências necessárias, como: 
+O routing vai instalar todas as dependências necessárias, como: 
 
-- Klein.php (is a fast & flexible router for PHP 5.3+)
+- klein.php (is a fast & flexible router for PHP 5.3+)
 - Twig Template (Twig, the flexible, fast, and secure template language for PHP )
 
 # Exemplo
@@ -30,11 +33,11 @@ O controller-route vai instalar todas as dependências necessárias, como:
 
   require __DIR__ . '/vendor/autoload.php';
   
-  $klein = new \Src\Routing\Route();
+  $route = new \Src\Routing\Route();
   
-  $klein->map('GET', '/', 'IndexController@action');
+  $route->get('/', 'IndexController@action');
   
-  $klein->dispatch();
+  $route->dispatch();
 ```
 
 # Antes de usar
@@ -76,6 +79,17 @@ Após isso, no arquivo Route.php dentro do diretório src/Routing, deve fazer a 
 ```
 
 Configurar de acordo com os namespace da sua aplicação
+
+# Tipos de rotas
+
+``` php
+<?php
+
+  $route->get('/posts', $callback);
+  $route->post('/posts', $callback);
+  $route->put('/posts/[i:id]', $callback);
+  $route->delete('/posts/[i:id]', $callback);
+```
 
 # Licença
 
