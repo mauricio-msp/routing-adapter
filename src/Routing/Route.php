@@ -25,12 +25,12 @@ class Route extends \Klein\Klein {
         if(is_string($callback)):
             
             $params     = explode('@', $callback);
-            $controller = 'app\\controllers\\' . $params[0] . 'Controller.php';
+            $controller = 'app\\controllers\\' . $params[0] . 'Controller';
             $action     = $params[1];
             
-            $this->respond('GET', $path, function($request, $response, $app) use ($controller, $action){
+            $this->respond('GET', $path, function($request, $response, $service) use ($controller, $action){
                 $controller = new $controller();
-                $controller->loader($request, $response, $app);
+                $controller->loader($request, $response, $service);
                 return $controller->$action();
             });
         else:
@@ -43,12 +43,12 @@ class Route extends \Klein\Klein {
         if(is_string($callback)):
             
             $params     = explode('@', $callback);
-            $controller = 'app\\controllers\\' . $params[0] . 'Controller.php';
+            $controller = 'app\\controllers\\' . $params[0] . 'Controller';
             $action     = $params[1];
             
-            $this->respond('POST', $path, function($request, $response, $app) use ($controller, $action){
+            $this->respond('POST', $path, function($request, $response, $service) use ($controller, $action){
                 $controller = new $controller();
-                $controller->loader($request, $response, $app);
+                $controller->loader($request, $response, $service);
                 return $controller->$action();
             });
         else:
@@ -61,12 +61,12 @@ class Route extends \Klein\Klein {
         if(is_string($callback)):
             
             $params     = explode('@', $callback);
-            $controller = 'app\\controllers\\' . $params[0] . 'Controller.php';
+            $controller = 'app\\controllers\\' . $params[0] . 'Controller';
             $action     = $params[1];
             
-            $this->respond('PUT', $path, function($request, $response, $app) use ($controller, $action){
+            $this->respond('PUT', $path, function($request, $response, $service) use ($controller, $action){
                 $controller = new $controller();
-                $controller->loader($request, $response, $app);
+                $controller->loader($request, $response, $service);
                 return $controller->$action();
             });
         else:
@@ -79,12 +79,12 @@ class Route extends \Klein\Klein {
         if(is_string($callback)):
             
             $params     = explode('@', $callback);
-            $controller = 'app\\controllers\\' . $params[0] . 'Controller.php';
+            $controller = 'app\\controllers\\' . $params[0] . 'Controller';
             $action     = $params[1];
             
-            $this->respond('DELETE', $path, function($request, $response, $app) use ($controller, $action){
+            $this->respond('DELETE', $path, function($request, $response, $service) use ($controller, $action){
                 $controller = new $controller();
-                $controller->loader($request, $response, $app);
+                $controller->loader($request, $response, $service);
                 return $controller->$action();
             });
         else:
