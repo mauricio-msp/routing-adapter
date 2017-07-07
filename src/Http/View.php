@@ -31,7 +31,7 @@ class View {
      */
     
     public function render($view, array $data = []) {
-        $this->loader = new \Twig_Loader_Filesystem(/* diretório view */);
+        $this->loader = new \Twig_Loader_Filesystem(dir['views']);
         $this->twig   = new \Twig_Environment($this->loader);
         
         return $this->twig->render($view, $data);

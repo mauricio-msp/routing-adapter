@@ -41,10 +41,10 @@ class Controller {
      * 
      * @param type $request
      * @param type $response
-     * @param type $app
+     * @param type $service
      */
     
-    public function loader($request, $response, $app) {
+    public function loader($request, $response, $service) {
         
         // Requisição
         $this->request  = $request;
@@ -53,10 +53,10 @@ class Controller {
         $this->response = $response;
         
         // Serviços
-        $this->service  = new View($request, $response, $app);
+        $this->service  = $service;
         
         // App
-        $this->app      = $app;
+        $this->app      = new View($request, $response, $service);
     }
     
 }
