@@ -35,50 +35,10 @@ O routing vai instalar todas as dependências necessárias, como:
   
   $route = new \Src\Routing\Route();
   
-  $route->get('/', 'IndexController@action');
+  $route->get('/', 'Index@action');
   
   $route->dispatch();
 ```
-
-# Antes de usar
-
-No arquivo View.php dentro do diretório src/Http, deve fazer a seguinte alteração.
-
-``` php
-<?php
-    
-    // Como está
-    public function render($view, array $data = []) {
-        $this->loader = new \Twig_Loader_Filesystem(/* diretório view */);
-        $this->twig   = new \Twig_Environment($this->loader);
-        
-        return $this->twig->render($view, $data);
-    }
-    
-    // Como deve por exemplo
-     public function render($view, array $data = []) {
-        $this->loader = new \Twig_Loader_Filesystem(__DIR__ . '/views/');
-        $this->twig   = new \Twig_Environment($this->loader);
-        
-        return $this->twig->render($view, $data);
-    }
-```
-Você deve alterar o caminho para o diretório onde vai conter suas views ou páginas.
-
-***
-
-Após isso, no arquivo Route.php dentro do diretório src/Routing, deve fazer a seguinte alteração.
-
-``` php
-<?php
-    // Linha 28
-    $controller = /* App\\Controllers\\  . */ $params[0];
-    
-    // Exemplo
-    $controller = 'App\\Controllers\\'  .  $params[0];
-```
-
-Configurar de acordo com os namespace da sua aplicação
 
 # Tipos de rotas
 
