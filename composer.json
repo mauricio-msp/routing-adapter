@@ -1,5 +1,5 @@
 { 
-    "name": "mauricio-msp/routing",
+    "name": "mauricio-msp/routing-adapter",
     "description": "Um roteador adaptado com PHP",
     "keywords": ["route", "router" ,"routing", "adapter", "php"],
     "license": "MIT",
